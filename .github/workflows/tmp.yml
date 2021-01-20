@@ -10,6 +10,4 @@ jobs:
         with:
           java-version: 1.8
       - name: Publish to Maven Central
-        run: echo ${{ secrets.MY_SECRET }}
-        env:
-          MAVEN_USERNAME: ${{ secrets.MY_SECRET }}
+        run: echo ${{ github.repository }}
